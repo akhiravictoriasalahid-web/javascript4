@@ -1,6 +1,6 @@
 // Exercise 1.
 function guessNumberGame() {
-    let randomNumber = Math.floor(Math.random() * 10);
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
     let guess = 0;
 
     while (guess !== randomNumber) {
@@ -17,3 +17,16 @@ function guessNumberGame() {
     }
 }
 guessNumberGame();
+
+
+// Exercise 2
+function generateRandomArray(length) {
+    let numbers = [];
+
+    for (let i = 0; i < length; i++) {
+        let randomNumber = Math.floor(Math.random() *100) + 1;
+        numbers.push(randomNumber);
+    }
+    return numbers;
+}
+console.log(generateRandomArray(10));
